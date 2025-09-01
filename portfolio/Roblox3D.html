@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>3D Modelling Showcase - Project Detail</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      background-color: #0f0f10;
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .project-detail {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .project-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .project-header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .highlight-line {
+      width: 120px;
+      height: 4px;
+      background: linear-gradient(90deg, #00ffcc, #0066ff);
+      border-radius: 2px;
+      margin: 10px auto 20px auto;
+    }
+
+    .project-description {
+      color: #ccc;
+      font-size: 1.05rem;
+      line-height: 1.8;
+      text-align: center;
+      max-width: 850px;
+      margin: 0 auto 40px;
+    }
+
+    /* Image Gallery */
+    .image-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-bottom: 50px;
+    }
+
+    .image-gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 16px;
+      box-shadow: 0 6px 25px rgba(0, 255, 204, 0.15);
+      transition: transform 0.3s ease;
+      object-fit: contain;
+      background: #111;
+      padding: 5px;
+    }
+
+    .image-gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    /* Tech Stack */
+    .project-tech {
+      margin-bottom: 30px;
+    }
+
+    .project-tech h3 {
+      color: #00ffcc;
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .tech-card {
+      background-color: rgba(20,20,20,0.85);
+      padding: 1.5rem;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+    }
+
+    .tech-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 15px;
+    }
+
+    @media (max-width: 600px) {
+      .project-description {
+        font-size: 0.95rem;
+      }
+
+      .project-header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="project-detail">
+    <!-- Title -->
+    <div class="project-header">
+      <h1>3D Modelling Showcase</h1>
+      <div class="highlight-line"></div>
+    </div>
+
+    <!-- Description -->
+    <p class="project-description">
+      This 3D Modelling Showcase highlights a collection of models created using industry-standard tools.  
+      The gallery demonstrates realistic rendering, texturing, and lighting techniques across multiple projects.
+    </p>
+
+    <!-- Image Gallery (18 pictures) -->
+    <div class="image-gallery">
+      <img src="../images/3DModels/1.png" alt="3D Model Screenshot 1">
+      <img src="../images/3DModels/2.png" alt="3D Model Screenshot 2">
+      <img src="../images/3DModels/3.png" alt="3D Model Screenshot 3">
+      <img src="../images/3DModels/4.png" alt="3D Model Screenshot 4">
+      <img src="../images/3DModels/5.png" alt="3D Model Screenshot 5">
+      <img src="../images/3DModels/6.png" alt="3D Model Screenshot 6">
+      <img src="../images/3DModels/7.png" alt="3D Model Screenshot 7">
+      <img src="../images/3DModels/8.png" alt="3D Model Screenshot 8">
+      <img src="../images/3DModels/9.png" alt="3D Model Screenshot 9">
+      <img src="../images/3DModels/10.png" alt="3D Model Screenshot 10">
+      <img src="../images/3DModels/11.png" alt="3D Model Screenshot 11">
+      <img src="../images/3DModels/12.png" alt="3D Model Screenshot 12">
+      <img src="../images/3DModels/13.png" alt="3D Model Screenshot 13">
+      <img src="../images/3DModels/14.png" alt="3D Model Screenshot 14">
+      <img src="../images/3DModels/15.png" alt="3D Model Screenshot 15">
+      <img src="../images/3DModels/16.png" alt="3D Model Screenshot 16">
+      <img src="../images/3DModels/17.png" alt="3D Model Screenshot 17">
+      <img src="../images/3DModels/18.png" alt="3D Model Screenshot 18">
+    </div>
+
+    <!-- Tech Stack -->
+    <div class="project-tech">
+      <h3>Technologies Used</h3>
+      <div class="tech-card">
+        <a href="https://www.blender.org/" target="_blank">
+          <img src="../images/Blender.png" alt="Blender">
+        </a>
+        <a href="https://www.autodesk.com/products/maya/overview" target="_blank">
+          <img src="../images/RobloxUI/RobloxIcon.png" alt="Roblox">
+        </a>
+       
+      </div>
+    </div>
+
+  </section>
+
+</body>
+</html>

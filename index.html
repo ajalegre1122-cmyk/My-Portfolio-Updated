@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+    
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./styles/aboutStyle.css">
+    <link rel="stylesheet" href="./styles/resumeStyle.css">
+<link rel="stylesheet" href="./styles/activeStatus.css">
+<link rel="stylesheet" href="./styles/portfolioStyle.css">
+  <style>
+    /* Section switching */
+    .page-section {
+      display: none;
+    }
+    .page-section.active {
+      display: block;
+      animation: fadeIn 0.4s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+  </style>
+</head>
+
+
+<body>
+
+    <!-- Mouse trail circles -->
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+<div class="profile-wrapper">
+  <img src="./images/profile.jpg" alt="Profile" class="profile-img">
+  <span class="active-status"></span>
+</div>
+
+<h2>AJ Alegre</h2>
+<p class="role">Full-Stack Developer</p>
+
+
+      <div class="info">
+        <div class="info-item">
+          <span class="icon"><i class="fas fa-envelope"></i></span>
+          <div class="text">
+            <small>Email</small>
+            <p>ajalegre1122@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <span class="icon"><i class="fas fa-phone"></i></span>
+          <div class="text">
+            <small>Phone</small>
+            <p>+639619754853</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <span class="icon"><i class="fas fa-location-dot"></i></span>
+          <div class="text">
+            <small>Location</small>
+            <p>Manila, Philippines</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="socials">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-google"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+      <!-- Navigation Block -->
+      <nav class="section-nav" id="mainNav">
+        <a href="#about" class="nav-item active" data-target="about">About</a>
+        <a href="#resume" class="nav-item" data-target="resume">Resume</a>
+        <a href="#portfolio" class="nav-item" data-target="portfolio">Portfolio</a>
+  
+        <a href="#contact" class="nav-item" data-target="contact">Contact</a>
+      </nav>
+
+      <!-- About (default visible) -->
+      <section id="about" class="page-section active">
+        <h1>About Me</h1>
+        <div class="highlight-line"></div>
+        <p>I am a highly driven Full Stack Developer with strong technical expertise in both front-end and back-end development. With a proven typing speed of 160 WPM, I work with exceptional efficiency and precision, enabling me to code and deliver results faster than most. </p>
+        <p>At just 20 years old, I already bring experience from local and national programming competitions, where I honed my problem-solving, adaptability, and teamwork skills under pressure. I am passionate about building clean, scalable, and user-focused applications, and I continuously challenge myself to stay updated with new technologies.</p>
+        <p>I want to be known as a fast, reliable, and innovative developer — someone who not only delivers high-quality solutions but also contributes creativity, speed, and dedication to every project I work on.</p>
+
+        <!-- Services -->
+        <section id="services">
+          <h2>What I Do</h2>
+          <div class="highlight-line"></div>
+          <div class="cards">
+            <div class="card">
+              <i class="fas fa-mobile-alt"></i>
+              <p class="card-title">Mobile Apps</p>
+              <p class="card-desc">Building responsive mobile applications for iOS and Android.</p>
+            </div>
+            <div class="card">
+              <i class="fas fa-code"></i>
+              <p class="card-title">Web Development</p>
+              <p class="card-desc">Creating modern, fast, and responsive websites.</p>
+            </div>
+            <div class="card">
+              <i class="fas fa-pencil-ruler"></i>
+              <p class="card-title">UI/UX Design</p>
+              <p class="card-desc">Designing intuitive interfaces with great user experience.</p>
+            </div>
+            <div class="card">
+              <i class="fas fa-server"></i>
+              <p class="card-title">Software Development</p>
+              <p class="card-desc">Building scalable and efficient backend systems.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills">
+          <h2>Skills</h2>
+          <div class="highlight-line"></div>
+          <div class="skills-card">
+            <a href="https://flutter.dev" target="_blank" class="skill-item">
+              <img src="./images/Flutter.png" alt="Flutter">
+            </a>
+            <a href="https://developer.android.com/studio" target="_blank" class="skill-item">
+              <img src="./images/Android Studio.png" alt="Android Studio">
+            </a>
+            <a href="https://www.figma.com/" target="_blank" class="skill-item">
+              <img src="./images/Figma.png" alt="Figma">
+            </a>
+            <a href="https://visualstudio.microsoft.com/vs/" target="_blank" class="skill-item">
+              <img src="./images/Visual Studio.png" alt="Visual Studio">
+            </a>
+            <a href="https://studio.blender.org/welcome/" target="_blank" class="skill-item">
+              <img src="./images/Blender.png" alt="Blender">
+            </a>
+            <a href="https://www.oracle.com/" target="_blank" class="skill-item">
+              <img src="./images/Oracle.png" alt="Oracle">
+            </a>
+          </div>
+        </section>
+      </section>
+
+      <!-- Resume -->
+      <!-- Resume -->
+<section id="resume" class="page-section">
+  <h1>Resume</h1>
+  <div class="highlight-line"></div>
+  <!-- Download CV Button -->
+  <div class="mb-4">
+  <a href="./files/AjAlegre_CV.pdf" download class="btn btn-theme">
+  <i class="fas fa-download me-2"></i> Download CV
+</a>
+  </div>
+  <!-- Summary -->
+  <div class="resume-block">
+    <h2>Summary</h2>
+    <p>
+      Motivated Full Stack Developer with strong front-end and back-end development skills. 
+      Proven ability to work efficiently with a 160 WPM typing speed and experience in both 
+      local and national programming competitions. Known for delivering fast, high-quality solutions 
+      and eager to contribute technical expertise, creativity, and reliability to a dynamic team.
+    </p>
+  </div>
+
+  <!-- Education -->
+  <div class="resume-block">
+    <h2>Education</h2>
+    <div class="resume-item">
+      <h3>Bachelor of Science in Information Technology <span>(Aug 2024 - June 2028)</span></h3>
+      <p>STI College</p>
+    </div>
+    <div class="resume-item">
+      <h3>Senior High School - Mobile Apps & Web Development <span>(Aug 2022 - Oct 2024)</span></h3>
+      <p>STI College</p>
+    </div>
+  </div>
+
+  <!-- Work Experience -->
+  <div class="resume-block">
+    <h2>Work Experience</h2>
+
+    <div class="resume-item">
+      <h3>Co-Founder - LAS Solutions <span>(Feb 2024 - Present)</span></h3>
+      <ul>
+        <li>Established a company specializing in end-to-end full stack development solutions.</li>
+        <li>Provided expertise in front-end and back-end development, database management, and cloud deployment.</li>
+        <li>Led client-focused projects from planning to deployment.</li>
+        <li>Delivered scalable, user-friendly, and innovative digital solutions.</li>
+      </ul>
+    </div>
+
+    <div class="resume-item">
+      <h3>Founder - Chosen Studio <span>(Jan 2020 - 2022)</span></h3>
+      <ul>
+        <li>Founded and led a development team in the Roblox community.</li>
+        <li>Managed full project lifecycle including design, scripting, testing, and deployment.</li>
+        <li>Coordinated with team members for timely delivery of quality projects.</li>
+        <li>Delivered multiple Roblox projects demonstrating leadership, expertise, and creativity.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Technical Skills -->
+  <div class="resume-block">
+    <h2>Technical Skills</h2>
+    <p>
+      <strong>Skills:</strong> Front-End & Back-End Development, RESTful API Design, Database Management (SQL & NoSQL), Responsive Web Design, Git/GitHub, Cloud Deployment (AWS, Firebase), UI/UX Implementation, Agile Development, Game Development<br>
+      <strong>Programming:</strong> HTML, CSS, JavaScript, Python, PHP, Java, C, C++, C#, Lua, etc.<br>
+      <strong>Languages:</strong> English, Tagalog
+    </p>
+  </div>
+
+  <!-- Awards -->
+  <div class="resume-block">
+    <h2>Awards & Activities</h2>
+    <ul>
+      <li>Champion – STI College Local Hackathon Competition (2022–2023, 2023–2024, 2024–2025)</li>
+      <li>Champion – STI College Cluster Hackathon Competition (2023–2024)</li>
+      <li>Participant – STI College Cluster Hackathon Competition (2022–2023, 2024–2025)</li>
+      <li>Participant – STI College Nationals Hackathon Competition (2023–2024)</li>
+    </ul>
+
+      <div class="resume-block">
+    <h2>Contact</h2>
+    <p>
+      <strong>Address:</strong> Cavite, Philippines<br>
+      <strong>Phone:</strong> +63 961 975 4853<br>
+      <strong>Email:</strong> ajalegre425@gmail.com<br>
+      <strong>Website:</strong> <a href="https://sites.google.com/view/henry-builds/work" target="_blank">Portfolio Site</a>
+    </p>
+  </div>
+  </div>
+
+  <!-- Contact -->
+
+</section>
+
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="page-section">
+  <h1>Portfolio</h1>
+  <div class="highlight-line"></div>
+
+  <!-- Filter Tabs -->
+  <div class="portfolio-filters mb-4">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="application">Applications</button>
+    <button class="filter-btn" data-filter="web">Web Development</button>
+    <button class="filter-btn" data-filter="uiux">UI/UX</button>
+       <button class="filter-btn" data-filter="3d">3D Modelling</button>
+  </div>
+
+  <!-- Portfolio Grid -->
+  <div class="row portfolio-grid">
+    
+    <!-- Portfolio Items -->
+    <div class="col-md-4 mb-4 portfolio-item application">
+      <a href="./portfolio/pickEdu.html" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+        <div class="card p-3 bg-dark text-white border-0 h-100">
+          <img src="./images/PickEdu/PickEdPortfolio.PNG" alt="PickEdu App" class="img-fluid rounded mb-3">
+          <h5 class="mb-1">PickEdu App</h5>
+          <p class="text-muted">Application</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-4 mb-4 portfolio-item web development">
+      <a href="https://able03.github.io/hci/?fbclid=IwY2xjawMhTNRleHRuA2FlbQIxMABicmlkETBYM0xBc292eUc1Q3A2NndDAR5DYJb0u_xo5BeGSem5TPZgRBqK5QgnyAi3XcqfSht6P6YeqMxS9BXuVM309w_aem_WOLdVhnvWQ-46OdgYmjV0A" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+        <div class="card p-3 bg-dark text-white border-0 h-100">
+          <img src="./images/Unreal.PNG" alt="Ambition Guru" class="img-fluid rounded mb-3">
+          <h5 class="mb-1">Unreal Clothing</h5>
+          <p class="text-muted">Web Development</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-4 mb-4 portfolio-item web development">
+      <a href="https://glistening-bavarois-e2db22.netlify.app
+" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+        <div class="card p-3 bg-dark text-white border-0 h-100">
+          <img src="./images/portfoliotemplate.PNG" alt="Portfolio Template" class="img-fluid rounded mb-3">
+          <h5 class="mb-1">Portfolio Template</h5>
+          <p class="text-muted">Web Development</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-4 mb-4 portfolio-item uiux">
+      <a href="./portfolio/RobloxUI.html" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+        <div class="card p-3 bg-dark text-white border-0 h-100">
+          <img src="./images/RobloxUI/3.PNG" alt="Tokma" class="img-fluid rounded mb-3">
+          <h5 class="mb-1">UI/UX for RPG Game</h5>
+          <p class="text-muted">UI/UX</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-4 mb-4 portfolio-item web development">
+      <a href="./portfolio/DashboardTemplate.html" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+        <div class="card p-3 bg-dark text-white border-0 h-100">
+          <img src="./images/Analytics.PNG" alt="Saara" class="img-fluid rounded mb-3">
+          <h5 class="mb-1">Analytics Template</h5>
+          <p class="text-muted">Web Development</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-4 mb-4 portfolio-item 3d">
+      <a href="./portfolio/Roblox3D.html" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+        <div class="card p-3 bg-dark text-white border-0 h-100">
+          <img src="./images/3DModel.PNG" alt="ifood" class="img-fluid rounded mb-3">
+          <h5 class="mb-1">3D Model For Game</h5>
+          <p class="text-muted">3D Modelling</p>
+        </div>
+      </a>
+    </div>
+
+  
+
+  </div>
+</section>
+
+
+<script>
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      // Remove active class from all buttons
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      const filter = button.getAttribute('data-filter');
+
+      portfolioItems.forEach(item => {
+        if (filter === 'all' || item.classList.contains(filter)) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+
+ 
+
+      <!-- Contact -->
+<!-- Contact Section -->
+<section id="contact" class="page-section">
+  <h1>Contact Me</h1>
+  <div class="highlight-line"></div>
+  <p>I'd love to hear from you! Whether you have a question, a project idea, or just want to say hello, feel free to reach out.</p>
+
+  <div class="row mt-4">
+    <!-- Contact Info -->
+    <div class="col-md-4 mb-4">
+      <div class="contact-info p-3 border rounded shadow-sm">
+        <h3>Get in Touch</h3>
+        <p><i class="fas fa-map-marker-alt me-2"></i>Manila, Philippines</p>
+        <p><i class="fas fa-envelope me-2"></i>ajalegre1122@gmail.com</p>
+        <p><i class="fas fa-phone me-2"></i>+63 961 975 4853</p>
+        <div class="socials mt-3">
+          <a href="#" class="me-2"><i class="fab fa-linkedin fa-lg"></i></a>
+          <a href="#" class="me-2"><i class="fab fa-github fa-lg"></i></a>
+          <a href="#" class="me-2"><i class="fab fa-twitter fa-lg"></i></a>
+          <a href="#"><i class="fab fa-google fa-lg"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="col-md-8">
+      <div class="contact-form p-4 border rounded shadow-sm">
+        <form id="contactForm">
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="name" name="user_name" placeholder="Enter your name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" name="user_email" placeholder="Enter your email" required>
+          </div>
+          <div class="mb-3">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+        <p id="formMessage" class="mt-3 text-success" style="display:none; opacity:0; transition: opacity 0.5s;">Thank you! Your message has been sent.</p>
+      </div>
+
+      <!-- Google Maps Embed -->
+      <div class="map mt-4" style="overflow:hidden; border-radius:15px;">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.719047228846!2d120.98202677475846!3d14.599512589698351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9e517d71f9f%3A0x61b3bb0d14c5e4a2!2sManila%2C%20Metro%20Manila%2C%20Philippines!5e0!3m2!1sen!2sus!4v1693569133450!5m2!1sen!2sus" 
+          width="100%" 
+          height="350" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  // Initialize EmailJS
+  emailjs.init("Q-xBiyklSX0OO1ywG"); // Replace with your EmailJS public key
+
+  // Handle form submission
+  document.getElementById("contactForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    emailjs.sendForm('service_1qktwtf', 'template_xyeks38', this)
+      .then(function() {
+        const msg = document.getElementById("formMessage");
+        msg.style.display = "block";
+        msg.style.opacity = "1";
+        setTimeout(() => {
+          msg.style.opacity = "0";
+          setTimeout(() => { msg.style.display = "none"; }, 500);
+        }, 4000); // fade out after 4 seconds
+        document.getElementById("contactForm").reset();
+      }, function(error) {
+        alert('Failed to send message: ' + JSON.stringify(error));
+      });
+  });
+</script>
+
+    </main>
+  </div>
+
+  <script>
+    document.querySelectorAll('.section-nav .nav-item').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault(); // stop default scroll
+
+        // remove active class from all links
+        document.querySelectorAll('.section-nav .nav-item').forEach(nav => nav.classList.remove('active'));
+        this.classList.add('active');
+
+        // hide all sections
+        document.querySelectorAll('.page-section').forEach(sec => sec.classList.remove('active'));
+
+        // show the target section
+        const targetId = this.getAttribute('data-target');
+        document.getElementById(targetId).classList.add('active');
+      });
+    });
+  </script>
+  <script>
+const coords = { x: 0, y: 0 };
+const circles = document.querySelectorAll(".circle");
+
+const colors = [
+
+"c09a00", "#d2a800", "#e4b600", "#f6c500", "#d7ac10", "#8a6f18", "#453814"," #000000"
+];
+
+// init circles with colors
+circles.forEach(function (circle, index) {
+  circle.x = 0;
+  circle.y = 0;
+  circle.style.backgroundColor = colors[index % colors.length];
+});
+
+window.addEventListener("mousemove", function(e){
+  coords.x = e.clientX;
+  coords.y = e.clientY;
+});
+
+function animateCircles() {
+  let x = coords.x;
+  let y = coords.y;
+
+  circles.forEach(function (circle, index) {
+    circle.style.left = (x - 12) + "px";
+    circle.style.top = (y - 12) + "px";
+    circle.style.scale = (circles.length - index) / circles.length;
+
+    circle.x = x;
+    circle.y = y;
+
+    const nextCircle = circles[index + 1] || circles[0];
+    x += (nextCircle.x - x) * 0.3;
+    y += (nextCircle.y - y) * 0.3;
+  });
+
+  requestAnimationFrame(animateCircles);
+}
+
+animateCircles();
+</script>
+
+</body>
+</html>

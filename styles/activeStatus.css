@@ -1,0 +1,36 @@
+/* Profile wrapper positions the status */
+.profile-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* Profile image */
+.profile-img {
+  width: 140px;
+  border-radius: 20%;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Active status dot */
+.active-status {
+  position: absolute;
+  bottom: 8px;   /* adjust depending on your profile image shape */
+  right: 8px;
+  width: 18px;
+  height: 18px;
+  background: #04ca3f; /* green */
+border: 3px solid #00ff4c;
+
+
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 255, 76, 0.8);
+  
+  /* Blinking animation */
+  animation: blink 1.2s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; transform: scale(1.2); }
+  50% { opacity: 0.3; transform: scale(1); }
+}

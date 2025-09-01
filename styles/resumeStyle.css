@@ -1,0 +1,119 @@
+/* Resume Section */
+.resume-block {
+  margin-bottom: 30px;
+}
+
+.resume-block h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #ffcc00;
+}
+
+.resume-item {
+  margin-bottom: 20px;
+}
+
+.resume-item h3 {
+  font-size: 1.1rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.resume-item h3 span {
+  font-size: 0.9rem;
+  color: #bbb;
+  font-weight: normal;
+}
+
+.resume-item ul {
+  margin: 8px 0 0 20px;
+  padding: 0;
+  color: #ccc;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.resume-block p, .resume-block ul li {
+  color: #ccc;
+}
+
+/* Animate Resume Section */
+#resume h1 {
+  opacity: 0;
+  transform: translateY(-40px);
+  animation: slideDown 0.8s ease forwards;
+}
+
+#resume .highlight-line {
+  width: 0;
+  height: 4px;
+  background: #ffcc00;
+  margin: 10px 0 20px;
+  border-radius: 2px;
+  animation: expandLine 0.8s ease forwards;
+  animation-delay: 0.3s;
+}
+
+/* Resume blocks animate from alternating sides */
+#resume .resume-block {
+  opacity: 0;
+  animation-duration: 0.9s;
+  animation-fill-mode: forwards;
+}
+
+/* Odd blocks slide from left, even blocks slide from right */
+#resume .resume-block:nth-of-type(1) {
+  transform: translateX(-60px);
+  animation-name: slideFromLeft;
+  animation-delay: 0.5s;
+}
+#resume .resume-block:nth-of-type(2) {
+  transform: translateX(60px);
+  animation-name: slideFromRight;
+  animation-delay: 0.5s;
+}
+#resume .resume-block:nth-of-type(3) {
+  transform: translateY(60px);
+  animation-name: slideFromBottom;
+  animation-delay: 0.5s;
+}
+#resume .resume-block:nth-of-type(4) {
+  transform: translateX(-60px);
+  animation-name: slideFromLeft;
+  animation-delay: 1s;
+}
+#resume .resume-block:nth-of-type(5) {
+  transform: translateX(60px);
+  animation-name: slideFromRight;
+  animation-delay: 1s;
+}
+#resume .resume-block:nth-of-type(6) {
+  transform: translateY(-60px);
+  animation-name: slideFromTop;
+  animation-delay: 2.0s;
+}
+#resume .resume-block:nth-of-type(7) {
+  transform: translateY(-60px);
+  animation-name: slideFromTop;
+  animation-delay: 2.0s;
+}
+
+/* Keyframes */
+@keyframes slideFromLeft {
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes slideFromRight {
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes slideFromTop {
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideFromBottom {
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideDown {
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes expandLine {
+  to { width: 120px; }
+}

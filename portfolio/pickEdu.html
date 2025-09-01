@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PickEdu App - Project Detail</title>
+  <link rel="stylesheet" href="styles.css" /> <!-- Link your existing CSS -->
+  <style>
+    body {
+      background-color: #100c08;
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .project-detail {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .project-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .project-header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .highlight-line {
+      width: 120px;
+      height: 4px;
+      background: linear-gradient(90deg, #ffcc00, #ff6a00);
+      border-radius: 2px;
+      margin: 10px auto 20px auto;
+    }
+
+    .project-description {
+      color: #ccc;
+      font-size: 1.05rem;
+      line-height: 1.8;
+      text-align: center;
+      max-width: 750px;
+      margin: 0 auto 40px;
+    }
+
+    .image-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    .image-gallery img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(255, 204, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .image-gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    .project-tech {
+      margin-bottom: 30px;
+    }
+
+    .project-tech h3 {
+      color: #ffcc00;
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+
+    .project-tech ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .project-tech li {
+      background: #222;
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: #ccc;
+      font-size: 0.95rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .project-links a {
+      display: inline-block;
+      margin: 0 10px 10px 0;
+      padding: 10px 20px;
+      background: #ffcc00;
+      color: #000;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.3s ease;
+    }
+
+    .project-links a:hover {
+      background: #ffaa00;
+    }
+
+    @media (max-width: 600px) {
+      .project-description {
+        font-size: 0.95rem;
+      }
+
+      .project-header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="project-detail">
+    <!-- Title -->
+    <div class="project-header">
+      <h1>PickEdu App</h1>
+      <div class="highlight-line"></div>
+    </div>
+
+    <!-- Description -->
+    <p class="project-description">
+    PickEdu App is a mobile application that enables students to schedule appointments with their teachers remotely and easily. Designed for convenience and efficiency, it allows students to book sessions, receive confirmations, and manage their schedules all in one place.
+  </p>
+
+    <!-- Image Gallery -->
+    <div class="image-gallery">
+      <img src="../images/PickEdu/PickEdu1.jpg" alt="PickEdu Screenshot 1">
+      <img src="../images/PickEdu/PickEdu2.jpg" alt="PickEdu Screenshot 2">
+      <img src="../images/PickEdu/PickEdu3.jpg" alt="PickEdu Screenshot 3">
+      <img src="../images/PickEdu/PickEdu4.jpg" alt="PickEdu Screenshot 4">
+    </div>
+
+<!-- Tech Stack -->
+<div class="project-tech">
+  <h3>Technologies Used</h3>
+  <div class="tech-card" style="
+      background-color: rgba(20,20,20,0.85);
+      padding: 1.5rem;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+  ">
+    <a href="https://developer.android.com/studio" target="_blank">
+      <img src="../images/Android Studio.png" alt="Android Studio" style="width:100px; height:100px; border-radius:15px;">
+    </a>
+    <a href="https://firebase.google.com/" target="_blank">
+      <img src="../images/Firebase.png" alt="Firebase" style="width:100px; height:100px; border-radius:15px;">
+    </a>
+    <a href="https://www.sqlite.org/index.html" target="_blank">
+      <img src="../images/SQLite.png" alt="SQLite" style="width:100px; height:100px; border-radius:15px;">
+    </a>
+  </div>
+</div>
+
+
+
+    <!-- Links -->
+    <div class="project-links">
+      <a href="https://play.google.com/store/apps/details?id=com.pick-edu.app" target="_blank">View on Play Store</a>
+      <a href="https://github.com/yourusername/pick-edu-app" target="_blank">View Source Code</a>
+    </div>
+  </section>
+
+</body>
+</html>

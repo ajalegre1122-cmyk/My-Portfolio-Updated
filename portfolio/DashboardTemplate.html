@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UI Showcase - Analytics Dashboard</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Devicon for tech logos -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+  <style>
+    body {
+      background-color: #f8fafc;
+      color: #333;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .dashboard {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .dashboard-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .dashboard-header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #1e293b;
+    }
+
+    .highlight-line {
+      width: 140px;
+      height: 5px;
+      background: linear-gradient(90deg, #0ea5e9, #10b981);
+      border-radius: 3px;
+      margin: 12px auto 24px auto;
+    }
+
+    .dashboard-description {
+      color: #475569;
+      font-size: 1.1rem;
+      text-align: center;
+      max-width: 750px;
+      margin: 0 auto 50px;
+    }
+
+    /* Analytics Grid */
+    .analytics-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 25px;
+      margin-bottom: 50px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      font-size: 1.2rem;
+      color: #0ea5e9;
+      margin-bottom: 15px;
+    }
+
+    canvas {
+      width: 100% !important;
+      height: 300px !important;
+    }
+
+    /* Info sections */
+    .project-info {
+      margin: 40px 0;
+      text-align: center;
+    }
+
+    .icon-card-container {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .icon-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 20px;
+      width: 140px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease;
+    }
+
+    .icon-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .icon-card i, .icon-card img {
+      font-size: 48px;
+      margin-bottom: 10px;
+      color: #0ea5e9;
+    }
+
+    .icon-card p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: #333;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+
+  <main class="dashboard">
+    <!-- Header -->
+    <header class="dashboard-header">
+      <h1>UI Showcase Analytics</h1>
+      <div class="highlight-line"></div>
+      <p class="dashboard-description">
+        This dashboard presents insights into the <b>UI Showcase</b> project, covering user engagement, 
+        feature adoption, and usage trends. Built with <b>Chart.js</b> for data visualization and enhanced with 
+        <b>HTML, CSS, JavaScript, and Bootstrap</b>.
+      </p>
+    </header>
+
+    <!-- Analytics Grid -->
+    <section class="analytics-grid">
+      <article class="card">
+        <h3>User Growth</h3>
+        <canvas id="userGrowthChart" aria-label="User Growth over time"></canvas>
+      </article>
+      <article class="card">
+        <h3>Feature Usage</h3>
+        <canvas id="featureUsageChart" aria-label="Feature usage distribution"></canvas>
+      </article>
+      <article class="card">
+        <h3>Active Users per Region</h3>
+        <canvas id="regionChart" aria-label="Users by region"></canvas>
+      </article>
+    </section>
+
+    <!-- APIs Used -->
+    <section class="project-info">
+      <h3>APIs Used</h3>
+      <div class="icon-card-container">
+        <div class="icon-card">
+          <i class="devicon-google-plain"></i>
+          <p>Google Maps API</p>
+        </div>
+        <div class="icon-card">
+          <i class="devicon-javascript-plain"></i>
+          <p>EmailJS API</p>
+        </div>
+        <div class="icon-card">
+          <i class="devicon-graphql-plain"></i>
+          <p>Chart.js</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="project-info">
+      <h3>Features</h3>
+      <div class="icon-card-container">
+        <div class="icon-card">
+          <i class="devicon-bootstrap-plain"></i>
+          <p>Responsive Layout</p>
+        </div>
+        <div class="icon-card">
+          <i class="devicon-javascript-plain"></i>
+          <p>Interactive Charts</p>
+        </div>
+        <div class="icon-card">
+          <i class="devicon-google-plain"></i>
+          <p>User Metrics</p>
+        </div>
+        <div class="icon-card">
+          <i class="devicon-nodejs-plain"></i>
+          <p>Real-time API Data</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Stack -->
+    <section class="project-info">
+      <h3>Core Stack</h3>
+      <div class="icon-card-container">
+        <div class="icon-card">
+          <i class="devicon-html5-plain colored"></i>
+          <p>HTML5</p>
+        </div>
+        <div class="icon-card">
+          <i class="devicon-css3-plain colored"></i>
+          <p>CSS3</p>
+        </div>
+        <div class="icon-card">
+          <i class="devicon-javascript-plain colored"></i>
+          <p>JavaScript</p>
+        </div>
+        <div class="icon-card">
+          <i class="devicon-bootstrap-plain colored"></i>
+          <p>Bootstrap</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    // User Growth Line Chart
+    new Chart(document.getElementById('userGrowthChart'), {
+      type: 'line',
+      data: {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+        datasets: [{
+          label: 'Users',
+          data: [120, 250, 400, 600, 850, 1200],
+          borderColor: '#0ea5e9',
+          backgroundColor: 'rgba(14,165,233,0.2)',
+          fill: true,
+          tension: 0.4
+        }]
+      },
+      options: { responsive: true }
+    });
+
+    // Feature Usage Doughnut Chart
+    new Chart(document.getElementById('featureUsageChart'), {
+      type: 'doughnut',
+      data: {
+        labels: ['Navigation Menus', 'Dashboards', 'Forms', 'Widgets'],
+        datasets: [{
+          label: 'Usage',
+          data: [35, 30, 20, 15],
+          backgroundColor: ['#0ea5e9', '#10b981', '#facc15', '#ef4444']
+        }]
+      },
+      options: { responsive: true }
+    });
+
+    // Active Users by Region Bar Chart
+    new Chart(document.getElementById('regionChart'), {
+      type: 'bar',
+      data: {
+        labels: ['North America', 'Europe', 'Asia', 'South America', 'Africa'],
+        datasets: [{
+          label: 'Users',
+          data: [500, 300, 450, 200, 150],
+          backgroundColor: '#10b981'
+        }]
+      },
+      options: { responsive: true }
+    });
+  </script>
+
+</body>
+</html>

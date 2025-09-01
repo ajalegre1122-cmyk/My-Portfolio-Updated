@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Roblox UI Showcase - Project Detail</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      background-color: #0f0f10;
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .project-detail {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .project-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .project-header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .highlight-line {
+      width: 120px;
+      height: 4px;
+      background: linear-gradient(90deg, #00ffcc, #0066ff);
+      border-radius: 2px;
+      margin: 10px auto 20px auto;
+    }
+
+    .project-description {
+      color: #ccc;
+      font-size: 1.05rem;
+      line-height: 1.8;
+      text-align: center;
+      max-width: 750px;
+      margin: 0 auto 40px;
+    }
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); /* flexible grid */
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.image-gallery img {
+  width: 100%;
+  height: auto; /* keep original aspect ratio */
+  border-radius: 16px;
+  box-shadow: 0 6px 25px rgba(0, 255, 204, 0.15);
+  transition: transform 0.3s ease;
+  object-fit: contain; /* makes sure the whole image shows */
+  background: #111; /* optional: gives padding color if images have transparency */
+  padding: 5px; /* optional: spacing so tall images don’t touch the border */
+}
+
+
+
+    .image-gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    .project-tech {
+      margin-bottom: 30px;
+    }
+
+    .project-tech h3 {
+      color: #00ffcc;
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+
+    .project-tech ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .project-tech li {
+      background: #222;
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: #ccc;
+      font-size: 0.95rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+
+    .project-links a {
+      display: inline-block;
+      margin: 0 10px 10px 0;
+      padding: 10px 20px;
+      background: #00ffcc;
+      color: #000;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.3s ease;
+    }
+
+    .project-links a:hover {
+      background: #00ccaa;
+    }
+
+    @media (max-width: 600px) {
+      .project-description {
+        font-size: 0.95rem;
+      }
+
+      .project-header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="project-detail">
+    <!-- Title -->
+    <div class="project-header">
+      <h1>Roblox UI Showcase</h1>
+      <div class="highlight-line"></div>
+    </div>
+
+    <!-- Description -->
+    <p class="project-description">
+      The Roblox UI Showcase demonstrates a collection of modern, responsive user interfaces designed within Roblox Studio.  
+      This project highlights menus, buttons, dashboards, and custom HUDs, built to enhance the player experience with clean design and smooth usability.
+    </p>
+
+    <!-- Image Gallery -->
+    <div class="image-gallery">
+      <img src="../images/RobloxUI/1.png" alt="Roblox UI Screenshot 1">
+      <img src="../images/RobloxUI/2.png" alt="Roblox UI Screenshot 2">
+      <img src="../images/RobloxUI/3.png" alt="Roblox UI Screenshot 3">
+      <img src="../images/RobloxUI/4.png" alt="Roblox UI Screenshot 4">
+    </div>
+
+    <!-- Tech Stack -->
+    <div class="project-tech">
+      <h3>Technologies Used</h3>
+      <div class="tech-card" style="
+          background-color: rgba(20,20,20,0.85);
+          padding: 1.5rem;
+          border-radius: 20px;
+          display: flex;
+          justify-content: center;
+          gap: 2rem;
+          flex-wrap: wrap;
+          margin-top: 1rem;
+          box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+      ">
+        <a href="https://create.roblox.com/" target="_blank">
+          <img src="../images/RobloxUI/RobloxIcon.png" alt="Roblox Studio" style="width:100px; height:100px; border-radius:15px;">
+        </a>
+        <a href="https://lua.org/" target="_blank">
+          <img src="../images/Lua.png" alt="Lua" style="width:100px; height:100px; border-radius:15px;">
+        </a>
+    
+      </div>
+    </div>
+
+    <!-- Links -->
+    <div class="project-links">
+      <a href="https://www.roblox.com/games/your-game-id" target="_blank">View on Roblox</a>
+      <a href="https://github.com/yourusername/roblox-ui-showcase" target="_blank">View Source Code</a>
+    </div>
+  </section>
+
+</body>
+</html>
